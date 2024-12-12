@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Handle requests by redirecting to the public folder
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# PHP 8.2 handler (if required by your AWS environment)
+AddHandler application/x-httpd-php82 .php .php5

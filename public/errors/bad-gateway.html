@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Error Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9fafb; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            color: #374151; /* Text color */
+        }
+        .status {
+            font-size: 6rem;
+            font-weight: bold;
+            color: #1d4ed8; /* Primary blue */
+            display: inline-block;
+        }
+        .icon {
+            height: 2.5rem;
+            width: 2.5rem;
+            color: #f59e0b; /* Yellow */
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .message {
+            font-size: 2rem;
+            margin-top: 1rem;
+            color: #374151; /* Gray-700 */
+        }
+        .description {
+            font-size: 1.125rem;
+            margin-top: 0.5rem;
+            color: #6b7280; /* Gray-500 */
+        }
+        .button-container {
+            margin-top: 1.5rem;
+        }
+        .button {
+            font-size: 1.125rem;
+            color: #3b82f6; /* Secondary blue */
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .button:hover {
+            color: #1e40af; /* Darker blue */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="status">404</h1>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 9.172a4 4 0 115.656 0M12 14v.01M6.343 16.657a8 8 0 1111.314 0M12 18h.01"/>
+    </svg>
+    <p class="message">Page Not Found</p>
+    <p class="description">Sorry, the page you are looking for does not exist.</p>
+    <div class="button-container">
+        <button onclick="goBack()" class="button">Go Back to Previous Page</button>
+    </div>
+</div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>

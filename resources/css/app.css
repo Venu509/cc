@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+@layer utilities {
+    .translate-x-0 {
+        transform: translateX(0);
+    }
+
+    .-translate-x-full {
+        transform: translateX(-100%);
+    }
+}
+
+body.loading {
+    pointer-events: none;
+    overflow: hidden;
+}
+
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+input[type="password"]::-webkit-textfield-decoration-container {
+    display: none;
+}
+
+.multiselect-tag {
+    background: #4F53D0 !important;
+}
+
+.multiselect-tags {
+    padding: 0 5px !important;
+}
+
+.multiselect, .multiselect-search {
+    border-radius: 0.75rem !important;
+}
+
+.multiselect-option.is-selected {
+    background: #4F53D0 !important;
+}
+
+
+/*.multiselect {*/
+/*    height: 38px !important;*/
+/*}*/
+
+/*.multiselect-wrapper,*/
+/*.multiselect-search {*/
+/*    height: 32px !important;*/
+/*}*/
+
+.multiselect-wrapper {
+    min-height: 0 !important;
+}
+
+/*.custom-input {*/
+/*    padding: 10px !important;*/
+/*}*/
+
+
+:root {
+    --dp-border-radius: 10px !important;
+}
+
+.dp__theme_light {
+    --dp-primary-color: #6A6FFF !important;
+}
