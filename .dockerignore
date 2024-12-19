@@ -8,3 +8,5 @@ yarn.lock
 tests
 *.md
 .env.*.backup
+!.env.production  # .env.production 
+COPY .env.production /var/www/html/.env
